@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.41.2",
+    "cypress": "^14.5.0",
+    "dotenv": "^16.6.0"
+  },
+  "scripts": {
+    "test:chrome": "npx cypress run --browser chrome",
+    "test:allure": "cypress run --env allure=true && allure serve allure-results",
+    "test:gui": "npx cypress open"
+  }
+}
