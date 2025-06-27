@@ -1,5 +1,5 @@
 import { warningsText } from "../../enum";
-import loginPageClass from "../../pages/loginPage";
+import loginPageClass from "../pages/loginPage";
 import { selectors } from "../../selectors"
 
 const username = Cypress.env("username");
