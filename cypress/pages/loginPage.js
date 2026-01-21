@@ -1,13 +1,14 @@
 import BasePage from "./basePage";
 
-class loginPage extends BasePage {
+
+class LoginPage extends BasePage {
   fillUsername(selector, username) {
-    cy.get(selector).type(username);
+    cy.getElement(selector).type(username);
   }
 
   fillPassword(selector, password) {
-    cy.get(selector).type(password);
+    cy.getElement(selector).type(password);
   }
 }
 
-export default loginPage;
+export default LoginPage;

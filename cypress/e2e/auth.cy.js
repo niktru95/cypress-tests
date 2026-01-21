@@ -1,6 +1,6 @@
 import { warningsText } from "../../enum";
-import loginPageClass from "../pages/loginPage";
-import { selectors } from "../../selectors"
+import LoginPageClass from "../pages/loginPage";
+import { selectors } from "../../selectors";
 
 const username = Cypress.env("username");
 const password = Cypress.env("password");
@@ -9,7 +9,7 @@ describe("Проверки на странице авторизации", () => 
   let loginPage;
 
   beforeEach(() => {
-    loginPage = new loginPageClass();
+    loginPage = new LoginPageClass();
     loginPage.visit("/");
   });
 
