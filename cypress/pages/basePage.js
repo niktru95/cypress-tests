@@ -14,5 +14,9 @@ class BasePage {
   checkWarningText(selector, text) {
     cy.get(selector).should("contain", text);
   }
+
+  checkWarningText2(selector, text) {
+    cy.get(selector).should("contain", text);
+  }
 }
 export default BasePage;
