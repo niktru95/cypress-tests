@@ -7,8 +7,8 @@ on:
     branches: [main]
 
 jobs:
-  test:
-    name: Запуск тестов
+  install:
+    name: Установка окружения и зависимостей
     runs-on: ubuntu-latest
     env:
       USER_NAME: ${{ secrets.USER_NAME }}
@@ -20,4 +20,9 @@ jobs:
           node-version: '20'
           cache: 'npm'
       - run: npm ci
+
+  test:
+    name: Выполнение тестов
+    runs-on: ubuntu-latest
+    steps: 
       - run: npm run test:chrome
